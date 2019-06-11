@@ -12,7 +12,6 @@ print(sorted(cars))
 cars = ["bmw", "benz", "audi", "kia", "toyota"]
 print(len(cars))
 print(cars[-2])
-print(cars[-5])
 
 
 
