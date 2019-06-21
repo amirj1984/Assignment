@@ -52,13 +52,20 @@ data = [50.2999992370605, 142.800003051757, 242.600006103515, 338.399993896484, 
         290077.40625, 290687.09375, 291814.40625, 292826.1875, 293585.0, 294318.90625, 294980.90625, 295598.6875,
         296515.8125, 297355.09375, 298169.5]
 print(len(data))
-lst = []
-i = 0
-while i <= len(data) - 1:
-        dif = data[i + 1] - data[i]
-        lst.insert(i, dif)
-        i = i + 1
-        print(lst)
+
+lst = [data[i + 1] - data[i] for i in range(len(data) - 1)]
+print(lst)
+
+for n in lst:
+        if lst[n] <= 300:
+                lst[n] == "S"
+        elif lst[n] >= 400:
+                lst[n] == "L"
+        else:
+                lst[n] == "M"
+print(lst)
+
+
 
 
 
