@@ -56,14 +56,21 @@ print(len(data))
 lst = [data[i + 1] - data[i] for i in range(len(data) - 1)]
 print(lst)
 
-for n in lst:
-        if lst[n] <= 300:
-                lst[n] == "S"
-        elif lst[n] >= 400:
-                lst[n] == "L"
+ind = 0
+while ind <= len(lst) - 1:
+        if lst[ind] <= 300:
+                lst[ind] = "S"
+        elif lst[ind] >= 400:
+                lst[ind] = "L"
         else:
-                lst[n] == "M"
+                lst[ind] = "M"
+        ind = ind + 1
 print(lst)
+
+for i in lst:
+        print(i, end="")
+
+
 
 
 
