@@ -4,8 +4,8 @@ fw = open("output.txt", mode="w")
 
 triangle_count = 0
 triangle_isosceles = 0
-triangle_saghein = 0
-triangle_ghaem = 0
+tringle_equilateral = 0
+triangle_right = 0
 
 for i in range(1000):
     triangle_sides = fr.readline().split()
@@ -22,8 +22,11 @@ for i in range(1000):
         if side_1 == side_2 == side_3:
             triangle_isosceles += 1
         elif side_1 == side_2 or side_1 == side_3 or side_2 == side_3:
-        elif side_list[0] ** 2 == side_list[1] ** 2 + side_list[2] ** 2:
-        elif side_1 != side_2 and side_2 != side_3 and side_1 != side_3:
+            tringle_equilateral += 1
+        if side_list[0] ** 2 == side_list[1] ** 2 + side_list[2] ** 2:
+            triangle_right += 1
+            
+        # elif side_1 != side_2 and side_2 != side_3 and side_1 != side_3:
 
 
 
