@@ -7,7 +7,7 @@ print(type(x+first_num))
 print(type(x*first_num))
 print(type(first_num))
 print("hello Pyton world!")
-message = "hello Pyton world!"
+message = "hello Python world!"
 print(message)
 print(message)
 name = "amir mohammad jodeiri khoshbaf"
