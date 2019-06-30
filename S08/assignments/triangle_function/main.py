@@ -1,3 +1,7 @@
+# this program reads an input file including sides of triangles and returns if they can constitute a triangle and of which type
+# it provides numbers of triangles, and each type
+
+
 def extract_data(raw_data):
     lines = raw_data.split("\n")
     for i in range(len(lines)):
