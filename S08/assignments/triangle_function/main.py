@@ -1,5 +1,3 @@
-
-
 def extract_data(raw_data):
     lines = raw_data.split("\n")
     for i in range(len(lines)):
@@ -24,6 +22,31 @@ def is_triangle(sides):
             return True
         else:
             return False
+
+
+def triangle_type(triangle):
+    types = []
+    tri_sorted = sorted(triangle)
+    if is_triangle(triangle):
+        if triangle[0] == triangle[1] == triangle[2]:
+            types.insert(0, "equi")
+        if triangle[0] == triangle[1] or triangle[1] == triangle[2] or triangle[0] == triangle[2]:
+            types.insert(1, "isos")
+        if tri_sorted[0] ** 2 + tri_sorted[1] ** 2 == tri_sorted[2] ** 2:
+            types.insert(2, "right-angled")
+        return types
+
+
+count_triangle = 0
+
+for triangle in triangles:
+    print(triangle)
+    if is_triangle(triangle):
+        count_triangle += 1
+        print("triangle", triangle_type(triangle))
+
+print("number of triangles: ", count_triangle)
+
 
 
 def is_isosceles(sides):
@@ -62,5 +85,5 @@ for triangle in triangles:
     if is_right_angled(triangle):
         count_right_angled += 1
 
-print("number of triangles: ", count_triangle, "number of isosceles triangles: ", count_isosceles, "number of equilateral triangles: ", count_equilateral, "number of right-angled triangles: ", count_right_angled, sep="\n")
+print("number of isosceles triangles: ", count_isosceles, "number of equilateral triangles: ", count_equilateral, "number of right-angled triangles: ", count_right_angled, sep="\n")
 
