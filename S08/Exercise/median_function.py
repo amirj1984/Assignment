@@ -1,5 +1,4 @@
-# this function takes a list of integers and returns its median
-
+ 
 def median(*numbers):
     n = len(numbers)
     if n % 2 == 1:
