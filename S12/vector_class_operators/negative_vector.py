@@ -1,4 +1,4 @@
-# this program returns the negative vector of a given one using class vector.
+# this program returns the negative vector of a given one using class vector and repr.
 
 
 class Vector:
@@ -9,9 +9,12 @@ class Vector:
     def __neg__(self):
         return Vector(-self.x, -self.y)
 
+    def __repr__(self):
+        return f" VECTOR {self.x}, {self.y}"
+
 
 vec1 = Vector(3, 4)
 vec2 = vec1.__neg__()
 # vec2 = -vec1
-print(vec2.x, vec2.y)
+print(repr(vec2))
 
