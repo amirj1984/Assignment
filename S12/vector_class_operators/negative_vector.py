@@ -1,4 +1,5 @@
-# this program returns the negative vector of a given one using class vector
+# this program returns the negative vector of a given one using class vector.
+
 
 class Vector:
     def __init__(self, x, y):
