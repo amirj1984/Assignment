@@ -1,6 +1,7 @@
 # Question: Why line 18 does not result in a correct answer???
 # this program adds two vectors and represents it
 
+
 class Vector:
     def __init__(self, x, y):
         self.x = x
