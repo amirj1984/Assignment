@@ -1,12 +1,11 @@
 # this program returns area & perimeter of a square using class square and docstring test
-# Question: while using docstring test, it receives failure, why?
 
 
 class Square:
     """
     EXAMPLE
     -------
-    >>> sq = Square(3)
+    >>> sq = Square(3.0)
     >>> sq.area_of_square()
     9.0
     >>> sq.perimeter_of_square()
