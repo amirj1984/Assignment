@@ -1,4 +1,4 @@
-# this program calculates subtraction of vectors using class od vectors.
+# this program calculates subtraction of vectors using class vectors and repr.
 
 
 class Vector:
@@ -11,9 +11,12 @@ class Vector:
         y_new = self.y - other.y
         return Vector(x_new, y_new)
 
+    def __repr__(self):
+        return f"VECTOR {self.x}, {self.y}"
+
 
 vec1 = Vector(3, 5)
 vec2 = Vector(7, 7)
 vec3 = vec1 - vec2
-print(vec3.x, vec3.y)
+print(repr(vec3))
 
