@@ -1,7 +1,16 @@
-# this program returns area and perimeter of a rectangle using class rectangle
+# this program returns area and perimeter of a rectangle using class rectangle and docstring test
 
 
 class Rectangle:
+    """
+    EXAMPLE
+    -------
+    >>> rec = Rectangle(3, 5)
+    >>> rec.area_of_rectangle()
+    15.0
+    >>> rec.perimeter_of_rectangle()
+    16.0
+    """
     def __init__(self, length, width):
         self.length = length
         self.width = width
@@ -15,4 +24,9 @@ class Rectangle:
 
 rec = Rectangle(5, 3)
 print("area of the rectangle is: ", rec.area_of_rectangle(), "\n", "perimeter of the rectangle is: ", rec.perimeter_of_rectangle())
+
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod()
 
