@@ -1,4 +1,4 @@
-# this program calculates subtraction of vectors using class od vectors
+# this program calculates subtraction of vectors using class od vectors.
 
 
 class Vector:
